@@ -1,0 +1,219 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #ffeead;
+  font:300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.index, .body-auth, .signUp{
+    margin: 0;
+    padding: 0;
+    background: #96ceb4;  
+}
+#title, #date, #diaryText {
+    width: 100%;
+    background: #ffeead;
+    border-radius: 5px;
+    border: 0.5px solid transparent;
+    color: #222;
+    margin: 5px;
+}
+
+#diaryText{
+    font-size: 1.5em;
+}
+.onediary, .ptext{
+    padding-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background: #ffeead;
+    border: 0.5px solid transparent;
+    color: #222;
+    margin: 5px;
+    white-space: pre-wrap;
+}
+.onediary span{
+  color: darkslategray;
+  float: right;
+}
+.menu{
+    left:0;
+    margin-left: 0;
+    padding: 0 10px;
+    top: 0;
+}
+.newEntry, .star .all{
+    flex-grow: 3;
+    position: relative;
+    display:inline-block; 
+    width:auto;
+    top: 10px;
+    height: 100vh;
+    background: #96ceb4;
+    align-items: center;
+    left: 0;
+    text-align: center;
+}
+
+#submit{
+    display: block;
+    margin: 10px 5px;
+    border-radius: 10px;
+    background-color: #ffcc5c;
+    border-color: #ffcc5c;
+}
+
+.window{
+    display: flex;
+    top:42px;
+    left:0;
+    width: 100vw;
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.menu li{
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#logo{
+    margin: 3px;
+    height: 35px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #222;
+    border-bottom: 2px solid  #ffcc5c;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+nav{
+    
+    display: inline-block;
+    height: 100vmax;
+    text-align: left;
+    background: linear-gradient(#ff6f69,#ffeead);
+    transition: 0.3s;
+    margin-right: 30px;
+    flex-grow: 1;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 40px;
+    background: #ffcc5c;
+    padding: auto;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+}
+.fa-bars{
+    position: relative;
+    left:105%;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin: 0;
+    border-radius: 0 0 5px;
+    top: -20px;
+}
+.fa-bars:hover{
+    border: 1px white solid;
+}
+
+/* Authentification styles: */
+
+.body-auth, .signUp{
+  background-color: #ffeead;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.body-auth img, .signUp img {
+    height: 100px;
+    margin: 30px;
+}
+
+.body-auth:before{
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(#ff6f69,#ffeead, #96ceb4);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    
+}
+.bg-img , .signbox{
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container, .container1 , .signcontainer{  
+  max-width: 300px;
+  padding: 16px;
+  background-color: #96ceb4;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 25px 25px 0 0;
+}
+.container1{
+    border-radius: 0 0 25px 25px ;
+}
+.signcontainer{
+  border-radius: 25px;
+}
+
+/* Full-width input fields */
+.container input[type=text], .container input[type=password],.signcontainer input[type=password],.signcontainer input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffeead;
+}
+
+.container input[type=text]:focus, .container input[type=password]:focus, .signcontainer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn, .signbtn{
+  background-color: #ff6f69;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+/* Set a style for the signUp button */
+.btn1 {
+  background-color: #ffcc5c;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn1:hover {
+  opacity: 1;
+}
+
+.btn:hover, .signbtn:hover{
+  opacity: 1;
+}
+
